@@ -6,8 +6,8 @@ WORKDIR /app/apps/api
 COPY apps/api/package*.json ./
 COPY apps/api/prisma ./prisma/
 
-# Install dependencies directly for api
-RUN npm install
+# Install dependencies directly for api using legacy peer deps to bypass npm v10 edgesOut bug
+RUN npm install --legacy-peer-deps
 
 # Copy root tsconfig and api source files
 COPY tsconfig.json /app/tsconfig.json
