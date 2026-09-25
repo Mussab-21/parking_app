@@ -12,6 +12,7 @@ import { TicketsModule } from './modules/tickets/tickets.module';
 import { PaymentsModule } from './modules/payments/payments.module';
 import { AdminModule } from './modules/admin/admin.module';
 import { MeController } from './modules/users/me.controller';
+import { HealthController } from './health.controller';
 import { JwtAuthGuard } from './modules/auth/guards/jwt-auth.guard';
 import { RolesGuard } from './modules/auth/guards/roles.guard';
 
@@ -34,7 +35,7 @@ import { RolesGuard } from './modules/auth/guards/roles.guard';
     PaymentsModule,
     AdminModule,
   ],
-  controllers: [MeController],
+  controllers: [MeController, HealthController],
   providers: [
     {
       provide: APP_GUARD,
