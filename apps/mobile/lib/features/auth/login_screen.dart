@@ -53,21 +53,12 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     }
   }
 
-  Future<void> _handleDemoLogin(String role) async {
+  void _fillAndLogin(String phone, String password) {
     setState(() {
-      _isLoading = true;
-      _error = null;
+      _phoneController.text = phone;
+      _passwordController.text = password;
     });
-    await ref.read(authProvider.notifier).demoLogin(role);
-    if (!mounted) return;
-    setState(() {
-      _isLoading = false;
-    });
-    if (role == 'ATTENDANT') {
-      context.go('/staff/home');
-    } else {
-      context.go('/home');
-    }
+    _login();
   }
 
   @override
@@ -132,29 +123,24 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             const SizedBox(height: 24),
             const Divider(),
             const SizedBox(height: 12),
-            const Center(
-              child: Text(
-                'Demo / Instant Testing Accounts',
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Colors.grey),
-              ),
+            const Text(
+              'Quick Demo Accounts (Live Backend)',
+              style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.grey),
             ),
-            const SizedBox(height: 12),
-            Row(
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
               children: [
-                Expanded(
-                  child: OutlinedButton.icon(
-                    icon: const Icon(Icons.directions_car, size: 18),
-                    label: const Text('Driver Demo', style: TextStyle(fontSize: 12)),
-                    onPressed: () => _handleDemoLogin('DRIVER'),
-                  ),
+                ActionChip(
+                  avatar: const Icon(Icons.directions_car, size: 16),
+                  label: const Text('Driver (+923459998887)'),
+                  onPressed: _isLoading ? null : () => _fillAndLogin('+923459998887', 'DemoPass123!'),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: OutlinedButton.icon(
-                    icon: const Icon(Icons.badge, size: 18),
-                    label: const Text('Attendant Demo', style: TextStyle(fontSize: 12)),
-                    onPressed: () => _handleDemoLogin('ATTENDANT'),
-                  ),
+                ActionChip(
+                  avatar: const Icon(Icons.badge, size: 16),
+                  label: const Text('Attendant (+923001112223)'),
+                  onPressed: _isLoading ? null : () => _fillAndLogin('+923001112223', 'DemoPass123!'),
                 ),
               ],
             ),

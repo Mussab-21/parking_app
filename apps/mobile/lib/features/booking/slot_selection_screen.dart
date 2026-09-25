@@ -8,8 +8,13 @@ import '../../core/network/api_client.dart';
 
 class SlotSelectionScreen extends StatefulWidget {
   final String facilityId;
+  final Map<String, dynamic>? bookingParams;
 
-  const SlotSelectionScreen({super.key, required this.facilityId});
+  const SlotSelectionScreen({
+    super.key,
+    required this.facilityId,
+    this.bookingParams,
+  });
 
   @override
   State<SlotSelectionScreen> createState() => _SlotSelectionScreenState();
@@ -37,10 +42,21 @@ class _SlotSelectionScreenState extends State<SlotSelectionScreen> {
     });
 
     try {
-      final startTime = DateTime.now().add(const Duration(hours: 1)).toIso8601String();
+      String startTimeStr;
+      int hours = 2;
+
+      if (widget.bookingParams != null && widget.bookingParams!['startTime'] != null) {
+        startTimeStr = widget.bookingParams!['startTime'];
+        hours = widget.bookingParams!['durationHours'] ?? 2;
+      } else {
+        final now = DateTime.now();
+        final aligned = DateTime(now.year, now.month, now.day, now.hour + 1, (now.minute < 30 ? 30 : 0), 0, 0);
+        startTimeStr = aligned.toIso8601String();
+      }
+
       final res = await ApiClient.instance.get('/facilities/${widget.facilityId}/availability', queryParameters: {
-        'start': startTime,
-        'hours': 1,
+        'start': startTimeStr,
+        'hours': hours,
       });
 
       if (res.data is Map && res.data['slots'] is List) {
@@ -134,13 +150,17 @@ class _SlotSelectionScreenState extends State<SlotSelectionScreen> {
                     label: _selectedSlotCode != null ? 'Continue with Slot $_selectedSlotCode' : 'Select a Slot',
                     onPressed: _selectedSlotId != null
                         ? () {
+                            final summaryData = <String, dynamic>{
+                              'facilityId': widget.facilityId,
+                              'slotId': _selectedSlotId,
+                              'slotCode': _selectedSlotCode,
+                            };
+                            if (widget.bookingParams != null) {
+                              summaryData.addAll(widget.bookingParams!);
+                            }
                             context.push(
                               '/book/summary',
-                              extra: {
-                                'facilityId': widget.facilityId,
-                                'slotId': _selectedSlotId,
-                                'slotCode': _selectedSlotCode,
-                              },
+                              extra: summaryData,
                             );
                           }
                         : null,

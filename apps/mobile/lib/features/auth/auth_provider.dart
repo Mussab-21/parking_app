@@ -70,25 +70,6 @@ class AuthNotifier extends StateNotifier<AuthState> {
     }
   }
 
-  Future<void> demoLogin(String role) async {
-    final isAttendant = (role == 'ATTENDANT' || role == 'OWNER');
-    final user = {
-      'id': isAttendant ? 'demo-attendant-1' : 'demo-driver-1',
-      'name': isAttendant ? 'Demo Attendant' : 'Standard Driver',
-      'phone': isAttendant ? '+923001112223' : '+923459998887',
-      'role': role,
-      'status': 'ACTIVE',
-    };
-    await StorageService.saveTokens(
-      accessToken: 'demo-access-token',
-      refreshToken: 'demo-refresh-token',
-    );
-    await StorageService.saveUser(user);
-    state = AuthState(
-      status: isAttendant ? AuthStatus.attendant : AuthStatus.authenticated,
-      user: user,
-    );
-  }
 
   Future<void> logout() async {
     try {

@@ -28,6 +28,11 @@ export default function LoginPage() {
       }
 
       const data = await res.json();
+      document.cookie = `auth_token=${data.accessToken}; path=/; max-age=86400; SameSite=Lax`;
+      document.cookie = `user_role=${data.user?.role}; path=/; max-age=86400; SameSite=Lax`;
+      localStorage.setItem('auth_token', data.accessToken);
+      localStorage.setItem('auth_user', JSON.stringify(data.user));
+
       if (data.user?.role === 'ADMIN') {
         router.push('/admin/dashboard');
       } else {

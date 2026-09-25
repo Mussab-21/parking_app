@@ -101,8 +101,8 @@ class _FacilityDetailsScreenState extends State<FacilityDetailsScreen> {
             ),
             const Spacer(),
             PrimaryButton(
-              label: 'Select Slot & Book',
-              onPressed: () => context.push('/book/slots/${widget.facilityId}'),
+              label: 'Select Schedule & Book',
+              onPressed: () => context.push('/book/schedule/${widget.facilityId}'),
             ),
           ],
         ),
