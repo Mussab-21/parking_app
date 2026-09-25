@@ -1,0 +1,9 @@
+.git
+.gradle
+.idea
+build
+apps/mobile
+apps/admin-portal
+node_modules
+**/node_modules
+*.log
