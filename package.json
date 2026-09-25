@@ -1,0 +1,20 @@
+{
+  "name": "parksmart-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint --prefix apps/api && npm run lint --prefix apps/admin-portal",
+    "format": "npm run format --prefix apps/api && npm run format --prefix apps/admin-portal",
+    "test": "npm run test --prefix apps/api",
+    "build:api": "npm run build --prefix apps/api",
+    "build:portal": "npm run build --prefix apps/admin-portal",
+    "build:mobile": "powershell -ExecutionPolicy Bypass -File scripts/build-release.ps1"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "eslint": "^9.0.0"
+  }
+}

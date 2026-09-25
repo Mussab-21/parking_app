@@ -1,0 +1,1286 @@
+{
+  "timestamp": "2026-09-22T17:57:49.725Z",
+  "tables": {
+    "users": {
+      "rowCount": 8,
+      "rows": [
+        {
+          "id": "18aa60a6-bcd9-4ba7-be0c-4e80256da4fd",
+          "name": "Plaza Owner",
+          "phone": "+923007654321",
+          "email": "owner@demoplaza.pk",
+          "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$dummyhash$dummyhash",
+          "role": "OWNER",
+          "status": "ACTIVE",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:01:05.858Z",
+          "updated_at": "2026-09-22T07:01:05.858Z",
+          "deleted_at": null
+        },
+        {
+          "id": "8624fdc3-c1d0-4618-8b9a-45bc79d261cf",
+          "name": "Demo Attendant",
+          "phone": "+923001112223",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,t=3,p=4$dummyhash$dummyhash",
+          "role": "ATTENDANT",
+          "status": "ACTIVE",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:01:05.858Z",
+          "updated_at": "2026-09-22T07:01:05.858Z",
+          "deleted_at": null
+        },
+        {
+          "id": "4662b676-6733-4f1d-9e42-0684311b8599",
+          "name": "Owner B",
+          "phone": "+923222222222",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$Ra6zAV/ZE9pkfdZVbkfb4Q$NHKQJ863V09EnUXI4R71eHcvZuGYI9awWay86OwZxqE",
+          "role": "OWNER",
+          "status": "ACTIVE",
+          "phone_verified_at": "2026-09-22T07:53:12.311Z",
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:53:11.650Z",
+          "updated_at": "2026-09-22T07:53:11.650Z",
+          "deleted_at": null
+        },
+        {
+          "id": "c38440c3-ee84-403a-96b8-01106e505337",
+          "name": "System Admin",
+          "phone": "+923001234567",
+          "email": "admin@parksmart.pk",
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$uaFtedbuhZu0CJj9SpPiJA$73rQgENb16RiUwnX0NUctHDY682lGd67vS+CxKMYy8A",
+          "role": "ADMIN",
+          "status": "ACTIVE",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:01:05.858Z",
+          "updated_at": "2026-09-22T07:01:05.858Z",
+          "deleted_at": null
+        },
+        {
+          "id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "name": "Owner A",
+          "phone": "+923111111111",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$lWiVO+giEigrNlWeQVtaiQ$txYV4r0HBrD0OSJvu3RIMcGoxa680e48+waD5HJ7Ep4",
+          "role": "OWNER",
+          "status": "ACTIVE",
+          "phone_verified_at": "2026-09-22T07:53:10.338Z",
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:53:09.676Z",
+          "updated_at": "2026-09-22T07:53:09.676Z",
+          "deleted_at": null
+        },
+        {
+          "id": "cd87c774-20c8-40c9-9c6d-98a9aede83cd",
+          "name": "Standard Driver",
+          "phone": "+923459998887",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$mnPmWI16iz8k3G2aoVCMdw$DzGJYiFp8yceDFbtNWZC05KYxN/TR9TXKti781Ofemc",
+          "role": "DRIVER",
+          "status": "ACTIVE",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T07:01:05.858Z",
+          "updated_at": "2026-09-22T07:01:05.858Z",
+          "deleted_at": null
+        },
+        {
+          "id": "a797e80e-1117-4af4-9c3c-ac1e9940ce92",
+          "name": "<script>alert('XSS')</script>",
+          "phone": "+923780800155",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$XTJuYsWqgHWWjZpgUPi66g$IypaDNCxhqVJ5ekuAraVcy9M6vL1iH5g8yZHQIn8f60",
+          "role": "DRIVER",
+          "status": "PENDING_VERIFICATION",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T17:55:42.659Z",
+          "updated_at": "2026-09-22T17:55:42.659Z",
+          "deleted_at": null
+        },
+        {
+          "id": "0bc0398a-64f9-477c-8de0-08c88e9d524c",
+          "name": "<script>alert('XSS')</script>",
+          "phone": "+923509440659",
+          "email": null,
+          "password_hash": "$argon2id$v=19$m=65536,p=4,t=3$K2FAzcNp54802OxncDZ5yw$93eDXrC+lpq43GBTonGu5l7SpAYgvCqRbON7IxkQjqM",
+          "role": "DRIVER",
+          "status": "PENDING_VERIFICATION",
+          "phone_verified_at": null,
+          "totp_secret_enc": null,
+          "failed_login_count": 0,
+          "locked_until": null,
+          "created_at": "2026-09-22T17:57:11.093Z",
+          "updated_at": "2026-09-22T17:57:11.093Z",
+          "deleted_at": null
+        }
+      ]
+    },
+    "owner_profiles": {
+      "rowCount": 2,
+      "rows": [
+        {
+          "id": "51921efd-00b0-4e24-b361-9c886af7f41a",
+          "user_id": "18aa60a6-bcd9-4ba7-be0c-4e80256da4fd",
+          "business_name": "Demo Parking Solutions",
+          "verification_status": "APPROVED",
+          "documents": {},
+          "reviewed_by": null,
+          "reviewed_at": null,
+          "rejection_reason": null,
+          "created_at": "2026-09-22T07:01:06.068Z",
+          "updated_at": "2026-09-22T07:01:06.068Z"
+        },
+        {
+          "id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+          "user_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "business_name": "Owner A Enterprise",
+          "verification_status": "APPROVED",
+          "documents": {},
+          "reviewed_by": "c38440c3-ee84-403a-96b8-01106e505337",
+          "reviewed_at": "2026-09-22T07:53:15.535Z",
+          "rejection_reason": null,
+          "created_at": "2026-09-22T07:53:14.735Z",
+          "updated_at": "2026-09-22T07:53:14.735Z"
+        }
+      ]
+    },
+    "facilities": {
+      "rowCount": 3,
+      "rows": [
+        {
+          "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "name": "Gulberg Grand Plaza - Updated",
+          "address": "Main Gulberg, Lahore",
+          "city": "Lahore",
+          "latitude": 31.52,
+          "longitude": 74.35,
+          "status": "APPROVED",
+          "hourly_rate_paisa": "25000",
+          "opening_hours": {
+            "monday": {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          },
+          "contact_phone": "+923111111111",
+          "photos": [],
+          "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+          "approved_at": "2026-09-22T07:52:12.640Z",
+          "version": 2,
+          "created_at": "2026-09-22T07:52:11.690Z",
+          "updated_at": "2026-09-22T07:52:17.574Z"
+        },
+        {
+          "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "name": "Gulberg Grand Plaza - Updated",
+          "address": "Main Gulberg, Lahore",
+          "city": "Lahore",
+          "latitude": 31.52,
+          "longitude": 74.35,
+          "status": "APPROVED",
+          "hourly_rate_paisa": "25000",
+          "opening_hours": {
+            "monday": {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          },
+          "contact_phone": "+923111111111",
+          "photos": [],
+          "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+          "approved_at": "2026-09-22T07:53:18.023Z",
+          "version": 2,
+          "created_at": "2026-09-22T07:53:17.051Z",
+          "updated_at": "2026-09-22T07:53:24.025Z"
+        },
+        {
+          "id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "name": "Demo Plaza",
+          "address": "Main Boulevard, Gulberg III",
+          "city": "Lahore",
+          "latitude": 31.5204,
+          "longitude": 74.3587,
+          "status": "APPROVED",
+          "hourly_rate_paisa": "20000",
+          "opening_hours": {
+            "friday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "monday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "sunday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "tuesday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "saturday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "thursday": {
+              "open": "08:00",
+              "close": "22:00"
+            },
+            "wednesday": {
+              "open": "08:00",
+              "close": "22:00"
+            }
+          },
+          "contact_phone": "+923007654321",
+          "photos": null,
+          "approved_by": null,
+          "approved_at": null,
+          "version": 1,
+          "created_at": "2026-09-22T07:01:06.269Z",
+          "updated_at": "2026-09-22T07:01:06.269Z"
+        }
+      ]
+    },
+    "facility_staff": {
+      "rowCount": 3,
+      "rows": [
+        {
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "user_id": "18aa60a6-bcd9-4ba7-be0c-4e80256da4fd",
+          "access_role": "OWNER"
+        },
+        {
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "user_id": "8624fdc3-c1d0-4618-8b9a-45bc79d261cf",
+          "access_role": "ATTENDANT"
+        },
+        {
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "user_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "access_role": "OWNER"
+        }
+      ]
+    },
+    "zones": {
+      "rowCount": 4,
+      "rows": [
+        {
+          "id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "name": "Zone AB",
+          "code": "AB",
+          "rate_override_paisa": null,
+          "created_at": "2026-09-22T07:01:06.658Z",
+          "updated_at": "2026-09-22T07:01:06.658Z"
+        },
+        {
+          "id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "name": "Zone CD",
+          "code": "CD",
+          "rate_override_paisa": null,
+          "created_at": "2026-09-22T07:01:06.857Z",
+          "updated_at": "2026-09-22T07:01:06.857Z"
+        },
+        {
+          "id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "name": "VIP Zone",
+          "code": "VZ",
+          "rate_override_paisa": null,
+          "created_at": "2026-09-22T07:52:13.588Z",
+          "updated_at": "2026-09-22T07:52:13.588Z"
+        },
+        {
+          "id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "name": "VIP Zone",
+          "code": "VZ",
+          "rate_override_paisa": null,
+          "created_at": "2026-09-22T07:53:19.000Z",
+          "updated_at": "2026-09-22T07:53:19.000Z"
+        }
+      ]
+    },
+    "slots": {
+      "rowCount": 40,
+      "rows": [
+        {
+          "id": "649d91cf-93a7-4049-8f79-6306cc63a322",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-1",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:07.052Z",
+          "updated_at": "2026-09-22T07:01:07.052Z"
+        },
+        {
+          "id": "1efc678d-34dd-41aa-aecc-47ad13d41f5c",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-1",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:07.247Z",
+          "updated_at": "2026-09-22T07:01:07.247Z"
+        },
+        {
+          "id": "3b2a7f9e-044e-453b-baf4-3b6f137a51a0",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-2",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:07.443Z",
+          "updated_at": "2026-09-22T07:01:07.443Z"
+        },
+        {
+          "id": "cc4e37fa-ae3f-41ad-a2db-70159214950b",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-2",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:07.635Z",
+          "updated_at": "2026-09-22T07:01:07.635Z"
+        },
+        {
+          "id": "b1cda101-288d-4d62-83eb-c7e78370e829",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-3",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:07.833Z",
+          "updated_at": "2026-09-22T07:01:07.833Z"
+        },
+        {
+          "id": "08aec9c3-d0cb-424d-b8f2-544c65511e3b",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-3",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.026Z",
+          "updated_at": "2026-09-22T07:01:08.026Z"
+        },
+        {
+          "id": "8fc0fc11-1561-4980-8475-7202f57c692f",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-4",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.219Z",
+          "updated_at": "2026-09-22T07:01:08.219Z"
+        },
+        {
+          "id": "6d2a00b5-c3e9-4195-82c9-50d4327af053",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-4",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.411Z",
+          "updated_at": "2026-09-22T07:01:08.411Z"
+        },
+        {
+          "id": "2f6c681e-4208-40a2-95a7-4da4583b4a4d",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-5",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.603Z",
+          "updated_at": "2026-09-22T07:01:08.603Z"
+        },
+        {
+          "id": "4761c189-e6ba-4cec-8ae3-f6baed565ca4",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-5",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.798Z",
+          "updated_at": "2026-09-22T07:01:08.798Z"
+        },
+        {
+          "id": "3b52eea0-188c-4910-9428-d801f39ae966",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-6",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:08.990Z",
+          "updated_at": "2026-09-22T07:01:08.990Z"
+        },
+        {
+          "id": "bba7702e-d99d-40eb-b6a9-5b30bc28276b",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-6",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:09.183Z",
+          "updated_at": "2026-09-22T07:01:09.183Z"
+        },
+        {
+          "id": "777849f8-75c2-4be2-bb72-48007a525551",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-7",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:09.376Z",
+          "updated_at": "2026-09-22T07:01:09.376Z"
+        },
+        {
+          "id": "8f15018c-52d1-430f-9d66-9f5c7b38674f",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-7",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:09.568Z",
+          "updated_at": "2026-09-22T07:01:09.568Z"
+        },
+        {
+          "id": "5474be32-b1f5-4f76-8e78-0ea6c8710114",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-8",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:09.761Z",
+          "updated_at": "2026-09-22T07:01:09.761Z"
+        },
+        {
+          "id": "dccdd7ae-1c79-4b81-a6d8-ce7a8cf5579c",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-8",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:09.955Z",
+          "updated_at": "2026-09-22T07:01:09.955Z"
+        },
+        {
+          "id": "d81a1b98-8e00-47f5-ac26-e3c2fdadceba",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-9",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:10.148Z",
+          "updated_at": "2026-09-22T07:01:10.148Z"
+        },
+        {
+          "id": "6a16a5c4-8ca9-4701-a4e5-61009cfe805c",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-9",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:10.340Z",
+          "updated_at": "2026-09-22T07:01:10.340Z"
+        },
+        {
+          "id": "8452dca9-eef8-4392-827a-3b7c5f73f502",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "5236b031-eee6-4933-b8dc-40a4885cd7f0",
+          "slot_code": "AB-10",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:10.534Z",
+          "updated_at": "2026-09-22T07:01:10.534Z"
+        },
+        {
+          "id": "94cfc7e7-de8a-4907-b3a5-63b446cbb562",
+          "facility_id": "8d134840-6854-464c-aa1b-2cafcf5f98e1",
+          "zone_id": "0deac4a4-034c-461b-a8be-8458c03de88d",
+          "slot_code": "CD-10",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:01:10.729Z",
+          "updated_at": "2026-09-22T07:01:10.729Z"
+        },
+        {
+          "id": "de2647a7-0241-4894-96ef-87702feea1b0",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-1",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:14.347Z",
+          "updated_at": "2026-09-22T07:52:14.347Z"
+        },
+        {
+          "id": "ea1cdc4a-10ee-41b5-a8ab-dc6bfebce62f",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-2",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:14.533Z",
+          "updated_at": "2026-09-22T07:52:14.533Z"
+        },
+        {
+          "id": "59c354ee-cbde-45c3-8f44-897123659b92",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-3",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:14.719Z",
+          "updated_at": "2026-09-22T07:52:14.719Z"
+        },
+        {
+          "id": "d74b5e4c-1fdb-4c9b-ac3f-b14aee6ed788",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-4",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:14.912Z",
+          "updated_at": "2026-09-22T07:52:14.912Z"
+        },
+        {
+          "id": "52e72c39-e25c-4bb4-bea9-fc4f9a0990f6",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-5",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:15.098Z",
+          "updated_at": "2026-09-22T07:52:15.098Z"
+        },
+        {
+          "id": "a48e071a-e7e9-4fca-83c5-36134784a249",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-6",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:15.284Z",
+          "updated_at": "2026-09-22T07:52:15.284Z"
+        },
+        {
+          "id": "1e1135f3-dd90-4d45-a4ab-389054cde09b",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-7",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:15.476Z",
+          "updated_at": "2026-09-22T07:52:15.476Z"
+        },
+        {
+          "id": "df8d23e2-6eb9-49f4-a2b9-f07ab50e254a",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-8",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:15.662Z",
+          "updated_at": "2026-09-22T07:52:15.662Z"
+        },
+        {
+          "id": "0b5dd03a-a118-4ad0-9732-6ce679710e88",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-9",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:15.849Z",
+          "updated_at": "2026-09-22T07:52:15.849Z"
+        },
+        {
+          "id": "ab3af0c3-6e97-4a22-acf1-259fb4615577",
+          "facility_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "zone_id": "4312836e-6282-4799-8bd7-922aeccdfb11",
+          "slot_code": "VZ-10",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:52:16.038Z",
+          "updated_at": "2026-09-22T07:52:16.038Z"
+        },
+        {
+          "id": "cc13f772-b163-4f49-8d90-a0049ab0b46f",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-1",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:19.772Z",
+          "updated_at": "2026-09-22T07:53:19.772Z"
+        },
+        {
+          "id": "f0a1e582-85b5-4f91-82c0-65ebb58947c6",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-2",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:19.966Z",
+          "updated_at": "2026-09-22T07:53:19.966Z"
+        },
+        {
+          "id": "a809a3e0-fa98-4caf-96d1-a08e0de3d675",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-3",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:20.157Z",
+          "updated_at": "2026-09-22T07:53:20.157Z"
+        },
+        {
+          "id": "9e799557-0d85-462e-88a6-5325ca3837cf",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-4",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:20.348Z",
+          "updated_at": "2026-09-22T07:53:20.348Z"
+        },
+        {
+          "id": "6dba8eb0-3071-4160-8e1e-67f61a38b731",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-5",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:20.538Z",
+          "updated_at": "2026-09-22T07:53:20.538Z"
+        },
+        {
+          "id": "e7334277-e730-429a-85f5-0c9134c0c09e",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-6",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:20.732Z",
+          "updated_at": "2026-09-22T07:53:20.732Z"
+        },
+        {
+          "id": "d6565ac6-b900-49b2-9f5f-506eabae16ce",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-7",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:20.923Z",
+          "updated_at": "2026-09-22T07:53:20.923Z"
+        },
+        {
+          "id": "53bf8b22-1036-4ae7-a8c6-9a3c18714cdb",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-8",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:21.113Z",
+          "updated_at": "2026-09-22T07:53:21.113Z"
+        },
+        {
+          "id": "8906113d-a6d0-4535-ab93-d0a952a6e936",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-9",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:21.309Z",
+          "updated_at": "2026-09-22T07:53:21.309Z"
+        },
+        {
+          "id": "42d5c543-af65-4062-9a6c-b2509c2e38da",
+          "facility_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "zone_id": "668d72fe-e3c7-4bf2-b656-1d7718402cd4",
+          "slot_code": "VZ-10",
+          "status": "ACTIVE",
+          "vehicle_type": "CAR",
+          "created_at": "2026-09-22T07:53:21.499Z",
+          "updated_at": "2026-09-22T07:53:21.499Z"
+        }
+      ]
+    },
+    "vehicles": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "bookings": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "payments": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "payment_events": {
+      "rowCount": 7,
+      "rows": [
+        {
+          "id": "390b9328-d589-4402-99c2-84d72f4c237b",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790065625333",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "0c64a9c7-20fd-43d7-84e8-ba01fc48e40a",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790065625333",
+            "providerReference": "MOCK_REF_1790065625138_932"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T08:27:06.996Z"
+        },
+        {
+          "id": "5df6fe5a-7f54-48b1-8fef-bf86aa52c62e",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790066343168",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "10245eb7-cc9b-411b-ad92-772270ef3fdc",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790066343168",
+            "providerReference": "MOCK_REF_1790066342979_422"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T08:39:04.831Z"
+        },
+        {
+          "id": "dbf00411-3dfb-4128-b409-02956de3dcde",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790067041860",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "017c0f7c-271a-4496-8815-c1f85dc05fc3",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790067041860",
+            "providerReference": "MOCK_REF_1790067041665_165"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T08:50:43.541Z"
+        },
+        {
+          "id": "6e7f6760-4855-4edd-8628-7d4cf468ebdb",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790067654745",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "d14dc938-8f58-450f-94cb-0ba9d3c0bb7a",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790067654745",
+            "providerReference": "MOCK_REF_1790067654548_29"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T09:00:56.421Z"
+        },
+        {
+          "id": "aaf82dd7-6756-433a-b926-58c2761be4cc",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790068377875",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "34b10843-26c2-401e-8f21-638ec0bd6fad",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790068377875",
+            "providerReference": "MOCK_REF_1790068377690_785"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T09:12:59.552Z"
+        },
+        {
+          "id": "a9bd2b09-3069-433a-aba7-64ffe3078d88",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "EVT_1790068456699",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "3128ef4f-75cb-4a72-95f9-2004520e8877",
+            "amountPaisa": 40000,
+            "providerEventId": "EVT_1790068456699",
+            "providerReference": "MOCK_REF_1790068456353_633"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T09:14:18.382Z"
+        },
+        {
+          "id": "aba6bd8b-1230-4da8-9c3a-66bb96338921",
+          "provider": "MOCK_PROVIDER",
+          "provider_event_id": "DUP_EVT_1790068468765",
+          "payload": {
+            "status": "SUCCEEDED",
+            "currency": "PKR",
+            "bookingId": "752e8f68-9bd5-4ec4-bd7f-11a176cc7b90",
+            "amountPaisa": 20000,
+            "providerEventId": "DUP_EVT_1790068468765",
+            "providerReference": "MOCK_REF_1790068468765"
+          },
+          "signature_valid": true,
+          "processed_at": "2026-09-22T09:14:30.445Z"
+        }
+      ]
+    },
+    "refunds": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "tickets": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "parking_events": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "audit_logs": {
+      "rowCount": 10,
+      "rows": [
+        {
+          "id": "4d59e7f4-b851-42d1-a1fa-1b87dfc67a61",
+          "actor_id": "c38440c3-ee84-403a-96b8-01106e505337",
+          "action": "OWNER_APPLICATION_APPROVED",
+          "entity_type": "OWNER_PROFILE",
+          "entity_id": "ed4a056c-d3c5-41a7-9c03-b13dab09f5ce",
+          "before": {
+            "id": "ed4a056c-d3c5-41a7-9c03-b13dab09f5ce",
+            "user_id": "7735838f-44b6-47c7-8c3a-dd7fa3437486",
+            "documents": {},
+            "created_at": "2026-09-22T07:52:09.478Z",
+            "updated_at": "2026-09-22T07:52:09.478Z",
+            "reviewed_at": null,
+            "reviewed_by": null,
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "PENDING"
+          },
+          "after": {
+            "id": "ed4a056c-d3c5-41a7-9c03-b13dab09f5ce",
+            "user_id": "7735838f-44b6-47c7-8c3a-dd7fa3437486",
+            "documents": {},
+            "created_at": "2026-09-22T07:52:09.478Z",
+            "updated_at": "2026-09-22T07:52:09.478Z",
+            "reviewed_at": "2026-09-22T07:52:10.248Z",
+            "reviewed_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "APPROVED"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:52:10.621Z"
+        },
+        {
+          "id": "9c2fdfe2-773f-42d2-804c-73a657ff2b21",
+          "actor_id": "c38440c3-ee84-403a-96b8-01106e505337",
+          "action": "FACILITY_APPROVED",
+          "entity_type": "FACILITY",
+          "entity_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "before": {
+            "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "PENDING_APPROVAL",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:52:11.690Z",
+            "updated_at": "2026-09-22T07:52:11.690Z",
+            "approved_at": null,
+            "approved_by": null,
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "after": {
+            "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:52:11.690Z",
+            "updated_at": "2026-09-22T07:52:11.690Z",
+            "approved_at": "2026-09-22T07:52:12.640Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:52:12.828Z"
+        },
+        {
+          "id": "4fa10cd8-3b5b-48cf-bbe7-cfe520711286",
+          "actor_id": null,
+          "action": "OWNER_APPLICATION_SUBMITTED",
+          "entity_type": "OWNER_PROFILE",
+          "entity_id": "ed4a056c-d3c5-41a7-9c03-b13dab09f5ce",
+          "before": null,
+          "after": {
+            "id": "ed4a056c-d3c5-41a7-9c03-b13dab09f5ce",
+            "user_id": "7735838f-44b6-47c7-8c3a-dd7fa3437486",
+            "documents": {},
+            "created_at": "2026-09-22T07:52:09.478Z",
+            "updated_at": "2026-09-22T07:52:09.478Z",
+            "reviewed_at": null,
+            "reviewed_by": null,
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "PENDING"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:52:09.668Z"
+        },
+        {
+          "id": "280ef334-438e-49fc-b8a2-8c0363a2dfd4",
+          "actor_id": null,
+          "action": "FACILITY_CREATED",
+          "entity_type": "FACILITY",
+          "entity_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "before": null,
+          "after": {
+            "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "PENDING_APPROVAL",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:52:11.690Z",
+            "updated_at": "2026-09-22T07:52:11.690Z",
+            "approved_at": null,
+            "approved_by": null,
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:52:12.066Z"
+        },
+        {
+          "id": "be647534-d9a5-4282-a579-6f4d743e9b66",
+          "actor_id": null,
+          "action": "FACILITY_UPDATED",
+          "entity_type": "FACILITY",
+          "entity_id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+          "before": {
+            "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:52:11.690Z",
+            "updated_at": "2026-09-22T07:52:11.690Z",
+            "access_role": "OWNER",
+            "approved_at": "2026-09-22T07:52:12.640Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "after": {
+            "id": "24b1e574-3d63-40b5-847d-2fdb3d9e733b",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza - Updated",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 2,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:52:11.690Z",
+            "updated_at": "2026-09-22T07:52:17.574Z",
+            "approved_at": "2026-09-22T07:52:12.640Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:52:17.761Z"
+        },
+        {
+          "id": "9b8b2c6d-2988-4964-8415-3b724659a4be",
+          "actor_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "action": "OWNER_APPLICATION_SUBMITTED",
+          "entity_type": "OWNER_PROFILE",
+          "entity_id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+          "before": null,
+          "after": {
+            "id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+            "user_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+            "documents": {},
+            "created_at": "2026-09-22T07:53:14.735Z",
+            "updated_at": "2026-09-22T07:53:14.735Z",
+            "reviewed_at": null,
+            "reviewed_by": null,
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "PENDING"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:53:14.929Z"
+        },
+        {
+          "id": "69effdfe-7b74-45e1-9bdb-82e270796369",
+          "actor_id": "c38440c3-ee84-403a-96b8-01106e505337",
+          "action": "OWNER_APPLICATION_APPROVED",
+          "entity_type": "OWNER_PROFILE",
+          "entity_id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+          "before": {
+            "id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+            "user_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+            "documents": {},
+            "created_at": "2026-09-22T07:53:14.735Z",
+            "updated_at": "2026-09-22T07:53:14.735Z",
+            "reviewed_at": null,
+            "reviewed_by": null,
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "PENDING"
+          },
+          "after": {
+            "id": "f7cfd1ac-d31d-48e2-bd06-7fee541d7600",
+            "user_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+            "documents": {},
+            "created_at": "2026-09-22T07:53:14.735Z",
+            "updated_at": "2026-09-22T07:53:14.735Z",
+            "reviewed_at": "2026-09-22T07:53:15.535Z",
+            "reviewed_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "business_name": "Owner A Enterprise",
+            "rejection_reason": null,
+            "verification_status": "APPROVED"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:53:15.916Z"
+        },
+        {
+          "id": "96da3e35-93aa-4997-89d2-26af5fbe5d31",
+          "actor_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "action": "FACILITY_CREATED",
+          "entity_type": "FACILITY",
+          "entity_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "before": null,
+          "after": {
+            "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "PENDING_APPROVAL",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:53:17.051Z",
+            "updated_at": "2026-09-22T07:53:17.051Z",
+            "approved_at": null,
+            "approved_by": null,
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:53:17.434Z"
+        },
+        {
+          "id": "5511f1a5-37dd-46dc-a9f2-3f2f2d04cc50",
+          "actor_id": "c38440c3-ee84-403a-96b8-01106e505337",
+          "action": "FACILITY_APPROVED",
+          "entity_type": "FACILITY",
+          "entity_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "before": {
+            "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "PENDING_APPROVAL",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:53:17.051Z",
+            "updated_at": "2026-09-22T07:53:17.051Z",
+            "approved_at": null,
+            "approved_by": null,
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "after": {
+            "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:53:17.051Z",
+            "updated_at": "2026-09-22T07:53:17.051Z",
+            "approved_at": "2026-09-22T07:53:18.023Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:53:18.214Z"
+        },
+        {
+          "id": "6175f8f5-e05c-483a-8292-bafcd65be0f4",
+          "actor_id": "5a97ced4-e864-4e8b-8246-407016ddf683",
+          "action": "FACILITY_UPDATED",
+          "entity_type": "FACILITY",
+          "entity_id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+          "before": {
+            "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 1,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:53:17.051Z",
+            "updated_at": "2026-09-22T07:53:17.051Z",
+            "access_role": "OWNER",
+            "approved_at": "2026-09-22T07:53:18.023Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "after": {
+            "id": "81c7fa25-b7ec-4a4a-aa90-7376dccfbd7a",
+            "city": "Lahore",
+            "name": "Gulberg Grand Plaza - Updated",
+            "photos": [],
+            "status": "APPROVED",
+            "address": "Main Gulberg, Lahore",
+            "version": 2,
+            "latitude": 31.52,
+            "longitude": 74.35,
+            "created_at": "2026-09-22T07:53:17.051Z",
+            "updated_at": "2026-09-22T07:53:24.025Z",
+            "approved_at": "2026-09-22T07:53:18.023Z",
+            "approved_by": "c38440c3-ee84-403a-96b8-01106e505337",
+            "contact_phone": "+923111111111",
+            "opening_hours": {
+              "monday": {
+                "open": "08:00",
+                "close": "22:00"
+              }
+            },
+            "hourly_rate_paisa": "25000"
+          },
+          "ip": null,
+          "user_agent": null,
+          "created_at": "2026-09-22T07:53:24.218Z"
+        }
+      ]
+    },
+    "idempotency_keys": {
+      "rowCount": 0,
+      "rows": []
+    },
+    "settings": {
+      "rowCount": 0,
+      "rows": []
+    }
+  }
+}

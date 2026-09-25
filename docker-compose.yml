@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgresql://parksmart:parksmart_pass@postgres:5432/parksmart_db?schema=public
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - parksmart-network
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=parksmart
+      - POSTGRES_PASSWORD=parksmart_pass
+      - POSTGRES_DB=parksmart_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U parksmart -d parksmart_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - parksmart-network
+
+networks:
+  parksmart-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

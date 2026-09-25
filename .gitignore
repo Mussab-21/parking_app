@@ -1,0 +1,34 @@
+# Node / Monorepo
+node_modules/
+dist/
+.next/
+apps/admin-portal/.next/
+coverage/
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Flutter / Mobile
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+apps/mobile/build/
+apps/mobile/.dart_tool/
+
+# Android
+*.iml
+.gradle
+/local.properties
+.idea/
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
