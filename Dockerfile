@@ -1,39 +1,35 @@
 FROM node:20-alpine AS builder
 
-WORKDIR /app
+WORKDIR /app/apps/api
 
-# Copy package manifests
-COPY package*.json ./
-COPY apps/api/package*.json ./apps/api/
-COPY apps/api/prisma ./apps/api/prisma/
+# Copy only api package manifests and prisma
+COPY apps/api/package*.json ./
+COPY apps/api/prisma ./prisma/
 
-# Install dependencies including dev dependencies for build
+# Install dependencies directly for api
 RUN npm install
 
-# Copy configuration and source files
-COPY tsconfig.json ./
-COPY apps/api ./apps/api
+# Copy root tsconfig and api source files
+COPY tsconfig.json /app/tsconfig.json
+COPY apps/api ./
 
 # Generate Prisma client and compile TypeScript
-WORKDIR /app/apps/api
 RUN npx prisma generate
 RUN npm run build
 
 # Production Runner Stage
 FROM node:20-alpine AS runner
 
-WORKDIR /app
+WORKDIR /app/apps/api
 
 ENV NODE_ENV=production
 ENV PORT=3000
 
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/apps/api/package*.json ./apps/api/
-COPY --from=builder /app/apps/api/prisma ./apps/api/prisma/
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/apps/api/dist ./apps/api/dist
+COPY apps/api/package*.json ./
+COPY apps/api/prisma ./prisma/
+COPY --from=builder /app/apps/api/node_modules ./node_modules
+COPY --from=builder /app/apps/api/dist ./dist
 
-WORKDIR /app/apps/api
 EXPOSE 3000
 
 CMD ["node", "dist/main.js"]
